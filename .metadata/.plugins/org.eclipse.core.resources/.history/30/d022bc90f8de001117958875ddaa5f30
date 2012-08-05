@@ -1,0 +1,13 @@
+package com.joelbyler.pomodorotimer;
+
+import org.junit.Test;
+
+
+public class TimeStringCalculatorTest {
+	
+
+	@Test
+	public void findCurrentTime() throws Exception {
+		TimeStringCalculator calc = new TimeStringCalculator();
+	}
+}

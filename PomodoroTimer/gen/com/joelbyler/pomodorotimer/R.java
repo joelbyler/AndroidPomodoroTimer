@@ -38,6 +38,7 @@ public final class R {
         public static final int text_expirytime_default=0x7f050002;
         public static final int timer_label=0x7f050001;
         public static final int title_activity_main=0x7f050005;
+        public static final int welcome_text=0x7f050006;
     }
     public static final class style {
         public static final int AppTheme=0x7f060000;

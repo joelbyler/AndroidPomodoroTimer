@@ -1,0 +1,6 @@
+class MainScreen
+  include Gametel
+
+  button(:start_button, :text => 'Start')
+
+end

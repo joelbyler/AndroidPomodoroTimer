@@ -10,7 +10,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="false"
         android:padding="@dimen/padding_medium"
-        android:text="@string/timer_label"
+        android:text="@string/welcome_text"
         tools:context=".MainActivity" />
 
     <TextView

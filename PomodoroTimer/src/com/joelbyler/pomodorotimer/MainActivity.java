@@ -60,10 +60,10 @@ public class MainActivity extends Activity {
 	
 	public void startTimer(View v) {
 		
-		
 		displayExpireTime();
 		startExpireTimer();
 		
+        changeLabelToPointToTime();
 	}
 
 	private void startExpireTimer() {
@@ -73,13 +73,24 @@ public class MainActivity extends Activity {
 	}
 
 	private void displayExpireTime() {
-		SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
-        minutes = 2;
-        Calendar cal = Calendar.getInstance();
-        cal.setTime(new Date());
-        cal.add(Calendar.MINUTE, minutes);
+		String expireTimeText = calculateExpireTime();
         TextView expireTime = (TextView) findViewById(R.id.expire_time);
-        expireTime.setText(sdf.format(cal.getTime()));
+        expireTime.setText(expireTimeText);
+        
+	}
+
+	private String calculateExpireTime() {
+		minutes = 2;
+        
+        TimeStringCalculator calc = new TimeStringCalculator();
+        calc.addMinutes(minutes);
+        
+		return calc.getTimeString();
+	}
+
+	private void changeLabelToPointToTime() {
+		TextView labelText = (TextView) findViewById(R.id.view_info);
+        labelText.setText(R.string.timer_label);
 	}	
 
 	

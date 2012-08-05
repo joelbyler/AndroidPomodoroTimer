@@ -1,0 +1,11 @@
+package com.joelbyler.pomodorotimer;
+
+import junit.framework.Test;
+import junit.framework.TestCase;
+
+public class TimeStringCalculatorTest extends TestCase {
+	@Test
+	public void testFindCurrentTime() {
+		
+	}
+}

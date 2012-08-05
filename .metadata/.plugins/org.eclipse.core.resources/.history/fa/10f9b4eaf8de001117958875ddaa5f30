@@ -1,0 +1,20 @@
+package com.joelbyler.pomodorotimer;
+
+import static org.junit.Assert.*;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.junit.Test;
+
+
+public class TimeStringCalculatorTest {
+	
+
+	@Test
+	public void findCurrentTime() throws Exception {
+		TimeStringCalculator calc = new TimeStringCalculator();
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:MM");
+		assertEquals(simpleDateFormat.format(new Date()), calc.getTimeString());
+	}
+}

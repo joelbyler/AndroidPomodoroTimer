@@ -1,0 +1,13 @@
+package com.joelbyler.pomodorotimer;
+
+import java.text.SimpleDateFormat;
+
+public class TimeStringCalculator {
+
+	public String getTimeString() {
+
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm");
+		return simpleDateFormat.format(new Date());
+	}
+
+}

@@ -1,0 +1,20 @@
+package com.joelbyler.pomodorotimer;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class TimeStringCalculator {
+
+	private Date date;
+
+	public String getTimeString() {
+
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm");
+		return simpleDateFormat.format(new Date());
+	}
+
+	public void setTime(Date date) {
+		this.date = date;
+	}
+
+}

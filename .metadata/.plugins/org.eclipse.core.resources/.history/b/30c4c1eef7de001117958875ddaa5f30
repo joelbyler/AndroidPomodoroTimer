@@ -1,0 +1,7 @@
+package com.joelbyler.pomodorotimer;
+
+import junit.framework.TestCase;
+
+public class TimeCalculatorTest extends TestCase {
+
+}
