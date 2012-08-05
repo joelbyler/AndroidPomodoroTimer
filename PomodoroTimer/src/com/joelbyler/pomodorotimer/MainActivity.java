@@ -1,9 +1,5 @@
 package com.joelbyler.pomodorotimer;
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-
 import android.app.Activity;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
@@ -38,7 +34,7 @@ public class MainActivity extends Activity {
 			// 1) start 25 minute timer
 			// 2) start 5 minute timer
 			// 3) cancel timer
-			soundAlarm();			
+				soundAlarm();			
 		}
 
 		private void soundAlarm() {
@@ -80,7 +76,7 @@ public class MainActivity extends Activity {
 	}
 
 	private String calculateExpireTime() {
-		minutes = 2;
+		minutes = 25;
         
         TimeStringCalculator calc = new TimeStringCalculator();
         calc.addMinutes(minutes);
